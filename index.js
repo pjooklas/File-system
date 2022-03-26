@@ -1,10 +1,10 @@
-import { file } from './file.js';
+import { file } from './lib/file.js';
 
-console.log(file);
-
-const status = file.create();
+const petras = {
+    name: 'Petras'
+}
+const status = await file.create('users', 'petras.json', petras);
+console.log(status);
 file.read();
 file.update();
-file.read();
-file.delete();
 file.read();
