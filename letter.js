@@ -1,5 +1,8 @@
 /**
  * Funkcija, kuri grazina teksto raide, pagal nurodyta pozicija.
+ * @param {string} text Tekstas (ne tuscias).
+ * @param {number} position Simbolio pozicija (programuotojiska). `Default: 0`.
+ * @returns {[boolean, string]} Funkcijos klaidos statusas; Funkcijos rezultatas (klaidos pranesimas arba simbolis).
  */
 function letter(text, position = 0) {
     // "text" validation
