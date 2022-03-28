@@ -17,4 +17,4 @@ console.log(readFileStatus2);
 file.delete();
 
 const readFileStatus3 = await file.read('users', 'petras.json');
-console.log(readFileStatu3);
+console.log(readFileStatus3);
