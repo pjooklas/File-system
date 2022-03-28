@@ -26,5 +26,5 @@ const users = [
 let i = 0;
 for (const student of users) {
     let jsonas = student.name.toLowerCase() + '.json';
-    file.create('users', jsonas, users[i++]);
+    await file.create('users', jsonas, student);
 }
