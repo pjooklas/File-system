@@ -8,6 +8,7 @@
         "dev": "nodemon",
         "letter": "nodemon ./letter.js",
         "error": "nodemon ./error.js",
+        "users": "nodemon ./users.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
