@@ -1,5 +1,6 @@
 import { file } from './lib/file.js';
 
+console.log('-------------------------');
 const petras = {
     name: 'Petras'
 }
@@ -9,7 +10,11 @@ console.log(createFileStatus);
 const readFileStatus1 = await file.read('users', 'petras.json');
 console.log(readFileStatus1);
 
-file.update();
+const updateFileStatus = await file.update('users', 'petras.json', {
+    name: 'Petras',
+    age: 99
+});
+console.log(updateFileStatus);
 
 const readFileStatus2 = await file.read('users', 'petras.json');
 console.log(readFileStatus2);
